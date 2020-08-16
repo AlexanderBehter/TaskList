@@ -18,26 +18,7 @@ class TaskListViewController: UITableViewController {
         
         taskLists = StorageManager.shared.realm.objects(TaskList.self)
         navigationItem.leftBarButtonItem = editButtonItem
-        /*
-         let shoppingList = TaskList()
-         shoppingList.name = "ShoppingList"
-         
-         let moviesList = TaskList(value: ["Movies List", Date(), [["Best film ever"], ["Best of the best", "", Date(), true]]])
-         
-         let milk = Task()
-         milk.name = "Milk"
-         milk.note = "2L"
-         
-         let bread = Task(value: ["Bread", "", Date(), true])
-         let apples = Task(value: ["name": "Apples", "isComplete": true])
-         
-         shoppingList.tasks.append(milk)
-         shoppingList.tasks.insert(contentsOf: [bread, apples], at: 1)
-         
-         DispatchQueue.main.async {
-         StorageManager.shared.save(taskLists: [shoppingList, moviesList])
-         }
-         */
+       
     }
     
     override func viewWillAppear(_ animated: Bool) {
